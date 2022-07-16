@@ -644,7 +644,9 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
+  /*background: var(--sidebar-bg);*/
+  background-color: var(--main-wrapper-bg);
+  border-right: 1px solid var(--main-border-color);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -704,9 +706,9 @@ $sidebar-display: "sidebar-display";
       @extend %clickable-transition;
 
       font-weight: 900;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       letter-spacing: 0.5px;
-      color: rgba(134, 133, 133, 99%);
+      color: var(--sidebar-active-color);
     }
   }
 
@@ -718,6 +720,7 @@ $sidebar-display: "sidebar-display";
     margin: 0.5rem 1.5rem 0.5rem 1.5rem;
     min-height: 3rem; /* avoid vertical shifting in multi-line words */
     user-select: none;
+    font-style: normal !important;
   }
 
   .nav-link {
@@ -1591,7 +1594,7 @@ $sidebar-display: "sidebar-display";
         @extend %profile-ml;
 
         a {
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           letter-spacing: 1px;
         }
       }
@@ -1620,11 +1623,12 @@ $sidebar-display: "sidebar-display";
         .nav-link {
           > span {
             letter-spacing: 2px;
+            margin-left: 25px;
           }
 
           > i {
             &.unloaded {
-              display: inline-block !important;
+              display: none !important;
             }
           }
         }
