@@ -1,8 +1,4 @@
 # The Site Configuration
-authors:
-  DonggeulDunggeul:
-    name: DonggeulDunggeul
-    display_name: DonggeulDunggeul
 
 # Import the theme
 theme: jekyll-theme-chirpy
