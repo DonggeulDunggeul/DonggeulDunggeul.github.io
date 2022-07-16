@@ -16,7 +16,8 @@ ex) 2022-07-16-Donggeul_post-name
 ```
 ---
 title:  "[template] post template"          // 제목을 작성하지 않으면 .md 파일의 이름으로 작성
-excerpt: "post template - first post"       // 
+excerpt: "post template - first post"       //
+author:                                     // 동글 or 둥글
 
 categories:
   - Post Template
