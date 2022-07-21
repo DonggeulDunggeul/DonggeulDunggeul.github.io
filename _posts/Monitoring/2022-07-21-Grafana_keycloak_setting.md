@@ -121,7 +121,7 @@ root_url = {grafana_url}
 // Edit setting
 [auth.generic_oauth]
 enabled = true
-name = T3q.ai DEV
+name = {sign in with {name}}
 allow_sign_up = true
 client_id = grafana
 client_secret = {keycloak -> clients -> {생성한client} -> credentials -> Secret복사}
