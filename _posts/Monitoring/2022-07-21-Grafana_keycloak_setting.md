@@ -1,6 +1,6 @@
 ---
-title:  "[Monitoring] Grafana Keycloak 연동 - 1"
-excerpt: "Grafana Keycloak 연동 - 1"
+title:  "[Monitoring] Grafana Keycloak 연동"
+excerpt: "Grafana Keycloak 연동"
 author: 동글
 
 categories:
