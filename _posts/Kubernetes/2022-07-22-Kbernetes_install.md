@@ -14,7 +14,7 @@ toc_sticky: true
 date: 2022-07-22
 last_modified_at: 2022-07-22
 ---
-> 관련 Post : 
+> 관련 Post : [Docker install](https://donggeuldunggeul.github.io/posts/Docker_install/)
 
 Ubuntu - 20.04  
 kubernetes : 1.18.8  

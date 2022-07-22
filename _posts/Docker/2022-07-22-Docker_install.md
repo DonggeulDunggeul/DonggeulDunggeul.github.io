@@ -14,7 +14,7 @@ toc_sticky: true
 date: 2022-07-22
 last_modified_at: 2022-07-22
 ---
-> 관련 Post : 
+> 관련 Post : [Kubernetes install](https://donggeuldunggeul.github.io/posts/Kbernetes_install/)
 
 Ubuntu - 20.04  
 docker : 19.03.8  
