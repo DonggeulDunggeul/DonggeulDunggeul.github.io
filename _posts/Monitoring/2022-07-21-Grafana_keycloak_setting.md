@@ -15,7 +15,7 @@ date: 2022-07-21
 last_modified_at: 2022-07-21
 ---
 
-> 관련 Post: https://donggeuldunggeul.github.io/posts/Grafana_Keycloak_Error_Reference/  
+> 관련 Post: [Error & Reference - Grafana Keycloak 연동](https://donggeuldunggeul.github.io/posts/Grafana_Keycloak_Error_Reference/)  
 
 &nbsp;  
 
@@ -165,7 +165,7 @@ tls_skip_verify_insecure = true
 - **api_url -**  {keycloak URL}/auth/realms/{realm name}/protocol/openid-connect/userinfo
 - **tls_skip_verify_insecure -** true인 경우 SSL/TLS는 서버에서 제공하는 모든 인증서와 해당 인증서의 호스트 이름을 수락
 
-참고 링크 : [https://grafana.com/docs/grafana/latest/auth/generic-oauth/](https://grafana.com/docs/grafana/latest/auth/generic-oauth/)
+> [참고](https://grafana.com/docs/grafana/latest/auth/generic-oauth/)
 
 ---
 
@@ -204,4 +204,4 @@ allow_embedding = true
 - **default_home_dashboard_path** - 지정한 경로에 있는 json 파일을 home dashboard로 지정(dashboard import와 다름)
 - **allow_embedding -** 해당 설정을 true로 변경해야 dashboard embedding 가능
 
-참고 링크: [https://grafana.com/docs/grafana/latest/administration/configuration/](https://grafana.com/docs/grafana/latest/administration/configuration/)
+> [참고](https://grafana.com/docs/grafana/latest/administration/configuration/)
