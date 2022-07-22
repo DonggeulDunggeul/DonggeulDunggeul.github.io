@@ -4,7 +4,7 @@ excerpt: "Grafana - Keycloak 연동"
 author: 동글
 
 categories:
-  - Monitoring, Reference, Error
+  - Reference & Error
 tags:
   - [Monitoring, Grafana, Keycloak]
 
