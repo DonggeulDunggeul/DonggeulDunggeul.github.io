@@ -24,7 +24,7 @@ last_modified_at: 2022-07-22
 docker로 grafana를 띄운 경우yaml에 별도의 환경 변수를 추가하여 설정할 수 있습니다.   
 >grafana.ini에서 설정한 값이 환경 변수에 추가되어있으면 환경 변수의 설정 값을 따릅니다.  
 
-> https://grafana.com/docs/grafana/v7.5/administration/configuration/#configure-with-environment-variables
+> [참고](https://grafana.com/docs/grafana/v7.5/administration/configuration/#configure-with-environment-variables)
 
 ```
 // example
@@ -50,7 +50,7 @@ disable_login_form = false
 
 &nbsp;  
 **1.3 Grafana Grafana home dashborad 설정 - grafana UI**  
-> https://grafana.com/docs/grafana/latest/administration/preferences/change-home-dashboard/
+> [참고](https://grafana.com/docs/grafana/latest/administration/preferences/change-home-dashboard/)
 
 **1.3.1** 좌측 메뉴에서 Dashboards → Browse Tab → 홈 대시 보드로 사용할 대시 보드 선택  
 
@@ -61,9 +61,9 @@ disable_login_form = false
 
 &nbsp;  
 **1.4 keycloak, grafana 조직 권한 mapping** 
-> https://grafana.com/docs/grafana/next/administration/manage-users-and-permissions/about-users-and-permissions/#organization-users-and-permissions  
+> [참고](https://grafana.com/docs/grafana/next/administration/manage-users-and-permissions/about-users-and-permissions/#organization-users-and-permissions) 
 
-> https://www.serpensalbus.net/posts/2021/keycloak-and-grafana-integration/  
+> [참고](https://www.serpensalbus.net/posts/2021/keycloak-and-grafana-integration/)   
 
 _조직의 admin 권한 부여는 가능하나 Grafana 전체의 admin권한은 UI에서만 부여 가능합니다._  
 
@@ -72,7 +72,7 @@ _조직의 admin 권한 부여는 가능하나 Grafana 전체의 admin권한은 
 ![Untitled (1)](https://user-images.githubusercontent.com/109357459/180443783-94d7454e-ebbe-40ba-8c3c-c8bf2a1b30f0.png)  
 
 **1.4.2** grafana client roles 추가  
-> grafana role : https://grafana.com/docs/grafana/next/administration/manage-users-and-permissions/about-users-and-permissions/  
+> grafana role : [참고](https://grafana.com/docs/grafana/next/administration/manage-users-and-permissions/about-users-and-permissions/)     
 
 - admin, editor, viewer role 추가  
   - clients → {clinet} → Roles → add Role  
@@ -227,7 +227,7 @@ chmod 644 grafana.db
 - Datasource named ${DS_PROMETHEUS} was not found 에러 발생
 
 **2.4.2** 발생 원인  
-- https://github.com/grafana/grafana/issues/10786#issuecomment-1122173762
+- [참고](https://github.com/grafana/grafana/issues/10786#issuecomment-1122173762)  
 
 **2.4.3** 해결 방안  
 - dashboard json configmap 작성 시  ${DS_PROMETHEUS} 로 되어있는  변수 전체를 prometheus로 변경  
