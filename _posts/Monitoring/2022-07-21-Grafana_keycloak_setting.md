@@ -6,7 +6,7 @@ author: 동글
 categories:
   - Monitoring
 tags:
-  - [Monitoring, Keyclaok, Grafana]
+  - [Monitoring, Keycloak, Grafana]
 
 toc: true
 toc_sticky: true
