@@ -209,6 +209,7 @@ def delete_user_keycloak(token):
 ```
 
 - **get user uid**  
+
 ```python
 """keycloak 전체 사용자 정보 리스트"""
 def keycloak_users_info(token):
@@ -222,7 +223,7 @@ def keycloak_users_info(token):
     response = requests.request("GET", url, headers=headers).json()
 
     return response
-
+    
 def get_keycloak_user_uid(token):
     user_list = keycloak_users_info(token)
     for user in user_list:
