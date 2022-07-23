@@ -241,10 +241,10 @@ chmod 644 grafana.db
 ```
 
 ```
-## 변경 전
+## 변경 후
 
 "datasource": {
 "type": "prometheus",
-"uid": "${DS_PROMETHEUS}"
+"uid": "prometheus"
 ```
 

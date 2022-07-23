@@ -15,7 +15,7 @@ date: 2022-07-22
 last_modified_at: 2022-07-22
 ---
 
-Centos - 7  
+VMware - Centos7  
 
 > [참고](https://tech.cloud.nongshim.co.kr/2018/11/23/lvmlogical-volume-manager-1-%EA%B0%9C%EB%85%90/)
 

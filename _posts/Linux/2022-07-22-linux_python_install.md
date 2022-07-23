@@ -55,7 +55,7 @@ rm -f /usr/local/bin/easy_install-3.7
 
 **1. apt Python 설치**
 
-```jsx
+```
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -66,7 +66,7 @@ sudo apt install python3.7
 
 **2. Python-dev 버전지정 설치(종속성 설치)**  
 
-```jsx
+```
 sudo apt-get install -y python3.7-dev
 ```  
 
@@ -76,7 +76,7 @@ sudo apt-get install -y python3.7-dev
 
 기존 `python3.8`이 깔려있으므로 앞에 `python3.7 -m` 안붙히면 `python3.8`을 사용합니다.
 
-```jsx
+```
 python3.7 -m pip install
 ```
 
