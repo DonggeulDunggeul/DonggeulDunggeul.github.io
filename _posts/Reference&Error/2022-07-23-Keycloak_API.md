@@ -1,6 +1,6 @@
 ---
-title:  "[Reference & Error] Keycloak API, helm install"
-excerpt: "Keycloak API, helm install"
+title:  "[Reference & Error] Keycloak API, helm install, custom"
+excerpt: "Keycloak API, helm install, custom"
 author: 동글
 
 categories:
@@ -386,4 +386,23 @@ ALTER DATABASE keycloak OWNER TO keycloak;
 \password keycloak
 ```
 
+&nbsp;  
+
+**1.3 Keylock Page Custom**
+> 로그인 페이지의 이미지와 html을 변경
+- **1.3.1** docker build
+
+```dockerfile
+FROM bitnami/keycloak:16.1.1-debian-10-r60
+
+COPY keycloak-logo-text.png /opt/bitnami/keycloak/themes/keycloak/login/resources/img/keycloak-logo-text.png
+COPY keycloak-bg.png /opt/bitnami/keycloak/themes/keycloak/login/resources/img/keycloak-bg.png
+COPY login.ftl /opt/bitnami/keycloak/themes/base/login/login.ftl
+```
+
+```
+docker build -t {name}:{tag} -f Dockerfile .
+```
+
+_참고) build가 아닌 cp로 파일을 변경하면 helm install 시 docker entrypoint 때문에 Log도 없이 오류 발생_
 
