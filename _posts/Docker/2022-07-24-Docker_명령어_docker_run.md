@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
  
 date: 2022-07-24
-last_modified_at: 2022-07-24
+last_modified_at: 2022-07-25
 ---
 
 >참고: ORELLY 제대로 배우는 도커
@@ -174,5 +174,48 @@ docker run -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=password
 컨테이너에 이름을 할당하여 다른 도커 명령어에서 해당 컨테이너를 찾을 때 사용합니다.  
 
 
+&nbsp;  
+
+**1.1.10&nbsp; -v, --volume**   
+볼륨을 컨테이너에 마운트 할 때 사용합니다.
+
+>**참고) Docker의 데이터 관리 - 볼륨의 종류**  
+>
+>
+>**1. Bind Mount**  
+>![다운로드 (1)](https://user-images.githubusercontent.com/109357459/180802982-d9dcfe37-dea4-48fc-baa8-1095980a5534.png)  
+>호스트 환경의 특정 경로를 컨테이너 내부 볼륨 경로와 연결하여 마운트합니다.
+>```
+>// 예시 - 컨테이너 내부의 /data디렉터리가 볼륨으로 만들어지고, 해당 디렉터리 내부에서 가지고 있는 모든 파일은 볼륨으로 복사됩니다.
+>
+>$ 
+>```
+>
+>
+>&nbsp;  
+>
+>**2. Volume(Docker에서 권고하는 방식)**  
+> ![다운로드](https://user-images.githubusercontent.com/109357459/180801044-09822118-d638-415a-9a6e-0e1900004321.png)
+> Docker 엔진이 관리하는 도커 스토리지 디렉토리에 새 디렉토리를 생성하여 컨테이너 내부의 볼륨 데이터를 저장하는 방식 입니다.
+>
+>
+>
+>```
+>// 예시 - 컨테이너 내부의 /data디렉터리가 볼륨으로 만들어지고, 해당 디렉터리 내부에서 가지고 있는 모든 파일은 볼륨으로 복사됩니다.
+>
+>$ docker run -it --name container-test -h CONTAINER -v /data debian /bin bash
+>```
+>
+>```
+>// 호스트에서 볼륨 위치 확인
+>$ docker inspect -f {{.MOUNTS}} container-test
+>```
+>
+>&nbsp;  
+>
+>**3. Tmpfs Mount**  
+> 컨테이너 내부에 저장된 볼륨을 호스트의 파일 시스템이 아닌, 메모리에 저장하는 방식 입니다.  
+> 컨테이너가 살아있는 동안에만 메모리에 저장되어 있기 때문에 데이터를 유지하지 않으려는 경우에 적합합니다.
+>
 
 
