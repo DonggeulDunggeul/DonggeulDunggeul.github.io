@@ -1,6 +1,6 @@
 ---
-title:  "[Kubernetes] Kubernetes - Kubectl"
-excerpt: "Kubernetes Kubectl"
+title:  "[Kubernetes] Kubernetes - Kubectl 명령어"
+excerpt: "Kubernetes Kubectl 명령어"
 author: 동글
 
 categories:
