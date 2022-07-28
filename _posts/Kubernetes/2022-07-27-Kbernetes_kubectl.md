@@ -22,7 +22,7 @@ last_modified_at: 2022-07-27
 
 ## 1. Kubectl  
 Kubectl은 쿠버네티스 API와 상호작용하기 위한 커맨드라인 도구입니다.  
-Kubectl을 사용해 Pod, ReplicaSet 등 대부분의 쿠버네티스 객체를 관리하고, 클러스터의 전반벅인 상태를 탐색하고 확인할 수 있습니다.
+Kubectl을 사용해 Pod, ReplicaSet 등 대부분의 쿠버네티스 객체를 관리하고, 클러스터의 전반적인 상태를 탐색하고 확인할 수 있습니다.
 
 &nbsp;  
 
