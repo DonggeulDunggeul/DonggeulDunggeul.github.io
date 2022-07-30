@@ -11,8 +11,8 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2022-07-29
-last_modified_at: 2022-07-29
+date: 2022-07-30
+last_modified_at: 2022-07-30
 ---
 
 ### HashMap ?
@@ -55,7 +55,7 @@ resultMap = animalMap
     SELECT
         TIER, NAME, GENDER
     FROM Member
-
+ 
     <resultMap id="animalMap" type="java.util.HashMap">
         <result column="TIER" property="등급" jdbcType="">
         <result column="NAME" property="이름" jdbcType="">
