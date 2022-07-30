@@ -55,7 +55,7 @@ resultMap = animalMap
     SELECT
         TIER, NAME, GENDER
     FROM Member
-
+ 
     <resultMap id="animalMap" type="java.util.HashMap">
         <result column="TIER" property="등급" jdbcType="">
         <result column="NAME" property="이름" jdbcType="">
