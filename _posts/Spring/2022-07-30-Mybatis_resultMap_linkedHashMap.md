@@ -30,7 +30,7 @@ HashMap 의 데이터 입력의 순서가 정확히 보장되지 않는다.
 
 그렇기 때문에 나온 것이 LinkedHashMap 이다.
 
->출처: https://hgserver.tistory.com/54
+>출처: [HashMap(해쉬맵)에 대한 개념과 사용방법](https://hgserver.tistory.com/54)
 
 ---
 ## LinkedHashMap ?
@@ -38,7 +38,7 @@ HashMap 의 데이터 입력의 순서가 정확히 보장되지 않는다.
 - 따라서 LinkedHashMap 은 Doubly-Linked List를 내부에 유지함으로써 입력된 자료의 순서를 보관한다.
 - 물론 자료의 크기가 커지면 메모리 사용량이 늘어나지만, 간편하다.
 
->출처: https://medium.com/@igniter.yoo/java-linkedhashmap-%EC%88%9C%EC%84%9C%EB%A5%BC-%EC%9C%A0%EC%A7%80%ED%95%98%EB%8A%94-%ED%95%B4%EC%8B%9C%EB%A7%B5-11a7846d8893
+>출처: [[Java] LinkedHashMap — 순서를 유지하는 해시맵](https://medium.com/@igniter.yoo/java-linkedhashmap-%EC%88%9C%EC%84%9C%EB%A5%BC-%EC%9C%A0%EC%A7%80%ED%95%98%EB%8A%94-%ED%95%B4%EC%8B%9C%EB%A7%B5-11a7846d8893)
 
 ---
 
