@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
  
 date: 2022-07-28
-last_modified_at: 2022-07-31
+last_modified_at: 2022-08-01
 ---
 
 참고 Post: [Grafana Provisining -  ConfigMap 생성](https://donggeuldunggeul.github.io/posts/Grafana_datasource_dashboard_provisioning/#13-datasource-dashboard-configmap-%EC%83%9D%EC%84%B1)
@@ -24,14 +24,13 @@ last_modified_at: 2022-07-31
 ORELLY 쿠버네티스 시작하기    
 
 
-## 1. 컨피그맵(ConfigMap) 과 시크릿(Secret)
-
-![콘피그맵](https://user-images.githubusercontent.com/109357459/181524399-722cac3f-e06f-4279-aa36-5b078e712797.jpg)
-
+## 1. 컨피그맵(ConfigMap) 과 시크릿(Secret)  
 컨테이너 이미지는 가능한 한 재사용할 수 있게 만드는 것이 좋습니다.  
 동일한 이미지를 개발환경, 테스트환경, 운영환경에 사용할 수 있어야 합니다.   
 
 컨피그맵(ConfigMap) 과 시크릿(Secret)을 이용하면 컨테이너 이미지에서 애플리케이션 코드와 환경별 구성을 분리할 수 있어 컨테이너 이미지를 보다 범용적으로 사용할 수 있습니다.
+
+![콘피그맵](https://user-images.githubusercontent.com/109357459/181524399-722cac3f-e06f-4279-aa36-5b078e712797.jpg)
 
 > **컨피그맵(ConfigMap)** 은 보안 또는 암호화를 제공하지 않으므로, 비밀번호, 키, 토큰과 같은 민감한 정보를 클러스터에서 사용하려면 **시크릿(Secret)** 을 사용
 
@@ -163,7 +162,12 @@ spec:
 &nbsp;  
 
 **1.2.1 시크릿 생성**  
-시크릿은 하나 이상의 데이터 요소를 키/값 쌍의 모음으로 유지합니다.
+시크릿은 하나 이상의 데이터 요소를 키/값 쌍의 모음으로 유지합니다.  
+
+>시크릿 생성 방법  
+>-[kubectl으로 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)   
+>-[구성파일에서 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-config-file/)  
+>-[사용자 커스텀 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/)
 
 ```
 kubectl create secret {Secret_Type} {Secret_Name} {Data}
@@ -219,15 +223,42 @@ kubectl get secret {Secret_Name} -o yaml
 
 **1.2.2 시크릿 사용**  
 
-https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets 참고하여 정리하기
+>- [기존 도커 자격증명을 기반으로 시크릿 생성 및 사용](https://kubernetes.io/ko/docs/tasks/configure-pod-container/pull-image-private-registry/#registry-secret-existing-credentials)
+>- [Pod에서 파일로 시크릿 사용](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod)  
+>- [볼륨에서 시크릿 사용](https://kubernetes.io/docs/concepts/configuration/secret/#consuming-secret-values-from-volumes)
 
-추가예정
 
-
+>  API를 직접 호출하는 애플리케이션은 쿠버네티스 REST API를 통해 시크릿을 사용할 수 있다. 그러나 애플리케이션의 이식성을 최대한 유지하는 것을 목표로 해야하며, 쿠버네티스에서 잘 실행될 뿐만 아니라 다른 플랫폼에서도 별도의 수정 없이 실행되어야 한다.
 
 &nbsp;  
 
 ### 1.3 컨피그맵(ConfigMap), 시크릿(Secret) 관리  
+컨피그맵과 시크릿은 쿠버네티스 API를 통해 관리됩니다.
 
-추가예정
+**1.3.1 조회**
 
+```
+// configmap
+kubectl get configmaps
+```
+
+```
+// secret
+kubectl get secrets
+```
+
+```
+// 자세한 정보
+kubectl describe configmap {configmap name}
+```
+
+&nbsp;  
+
+**1.3.2 생성**  
+
+```
+- --from-file=<파일 이름> : 파일 이름과 동일한 시크릿 데이터 키를 사용해 파일에서 적재
+- --from-file=<키>=<파일 이름> : 명시적으로 지정된 시크릿 데이터 키를 사용해 파일에서 적
+- --from-file=<디렉토리> : 지정된 디렉토리 내에서 키 이름으로 사용할 수 있는 모든 파일을 적
+- --from-literal=<키>=<값> : 지정된 키/값 쌍을 직접 적용
+```
