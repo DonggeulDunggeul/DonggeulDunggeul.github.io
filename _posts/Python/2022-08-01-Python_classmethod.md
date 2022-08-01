@@ -1,6 +1,6 @@
 ---
-title:  "Python classmethod. instanceMethod 메모리값 차이"
-excerpt: "Python classmethod. instanceMethod 메모리값 차이"
+title:  "[Python] classmethod. instanceMethod 메모리값 차이"
+excerpt: "[Python] classmethod. instanceMethod 메모리값 차이"
 author: 둥글
 
 categories:
