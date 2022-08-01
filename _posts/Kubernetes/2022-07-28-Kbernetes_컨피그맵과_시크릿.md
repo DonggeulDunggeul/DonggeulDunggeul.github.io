@@ -24,7 +24,7 @@ last_modified_at: 2022-08-01
 ORELLY 쿠버네티스 시작하기    
 
 
-## 1. 컨피그맵(ConfigMap) 과 시크릿(Secret)
+## 1. 컨피그맵(ConfigMap) 과 시크릿(Secret) s
 
 ![콘피그맵](https://user-images.githubusercontent.com/109357459/181524399-722cac3f-e06f-4279-aa36-5b078e712797.jpg)
 
