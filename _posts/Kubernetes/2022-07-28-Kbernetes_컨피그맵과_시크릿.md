@@ -15,13 +15,6 @@ date: 2022-07-28
 last_modified_at: 2022-08-01
 ---
 
-컨테이너 이미지는 가능한 한 재사용할 수 있게 만드는 것이 좋습니다.  
-동일한 이미지를 개발환경, 테스트환경, 운영환경에 사용할 수 있어야 합니다.   
-
-컨피그맵(ConfigMap) 과 시크릿(Secret)을 이용하면 컨테이너 이미지에서 애플리케이션 코드와 환경별 구성을 분리할 수 있어 컨테이너 이미지를 보다 범용적으로 사용할 수 있습니다.
-
-&nbsp;  
-
 참고 Post: [Grafana Provisining -  ConfigMap 생성](https://donggeuldunggeul.github.io/posts/Grafana_datasource_dashboard_provisioning/#13-datasource-dashboard-configmap-%EC%83%9D%EC%84%B1)
 
 참고: [쿠버네티스 레퍼런스 - 컨피그맵](https://kubernetes.io/ko/docs/concepts/configuration/configmap/),   
@@ -31,7 +24,11 @@ last_modified_at: 2022-08-01
 ORELLY 쿠버네티스 시작하기    
 
 
-## 1. 컨피그맵(ConfigMap) 과 시크릿(Secret)
+## 1. 컨피그맵(ConfigMap) 과 시크릿(Secret)  
+컨테이너 이미지는 가능한 한 재사용할 수 있게 만드는 것이 좋습니다.  
+동일한 이미지를 개발환경, 테스트환경, 운영환경에 사용할 수 있어야 합니다.   
+
+컨피그맵(ConfigMap) 과 시크릿(Secret)을 이용하면 컨테이너 이미지에서 애플리케이션 코드와 환경별 구성을 분리할 수 있어 컨테이너 이미지를 보다 범용적으로 사용할 수 있습니다.
 
 ![콘피그맵](https://user-images.githubusercontent.com/109357459/181524399-722cac3f-e06f-4279-aa36-5b078e712797.jpg)
 
