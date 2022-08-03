@@ -165,9 +165,9 @@ spec:
 시크릿은 하나 이상의 데이터 요소를 키/값 쌍의 모음으로 유지합니다.  
 
 >시크릿 생성 방법  
->-[kubectl으로 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)   
->-[구성파일에서 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-config-file/)  
->-[사용자 커스텀 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/)
+>- [kubectl으로 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)   
+>- [구성파일에서 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-config-file/)  
+>- [사용자 커스텀 시크릿 생성](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/)
 
 ```
 kubectl create secret {Secret_Type} {Secret_Name} {Data}
