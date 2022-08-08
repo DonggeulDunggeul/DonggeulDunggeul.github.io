@@ -29,6 +29,7 @@ last_modified_at: 2022-08-08
 - Spring Boot
 - Flask
 - PostgreSQL
+>[[Database] 우리는 어떤 Database를 선택하는가?](https://donggeuldunggeul.github.io/posts/Database_PostgreSQL_vs_MySQL/)
 
 
 ### 2. 구현범위  
