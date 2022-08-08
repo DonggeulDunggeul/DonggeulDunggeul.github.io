@@ -15,7 +15,7 @@ date: 2022-08-08
 last_modified_at: 2022-08-08
 ---  
 
-## TAT(This and That) v1.0  
+## TAT(This and That) v0.1  
 ---
 
 > 목표 기간: 2022.08.08 ~ 9월 중순
