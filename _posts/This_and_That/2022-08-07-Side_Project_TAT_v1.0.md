@@ -1,6 +1,6 @@
 ---
-title:  "[Side Project] TAT v0.1"
-excerpt: "[Side Project] TAT v0.1"
+title:  "[Side Project] TAT v1.0"
+excerpt: "[Side Project] TAT v1.0"
 author: 둥글동글
 
 categories:
@@ -21,7 +21,7 @@ last_modified_at: 2022-08-08
 > 목표 기간: 2022.08.08 ~ 9월 중순
 
 ### 1. 기본 아키텍처  
-![기본아키텍처](https://user-images.githubusercontent.com/109357459/183430595-9b7cb984-5112-4429-bb5a-90fc0dcba09d.png)
+![기본아키텍처 v0.1](https://user-images.githubusercontent.com/109357459/183430595-9b7cb984-5112-4429-bb5a-90fc0dcba09d.png)
 
 
 **1.1 기술스택**  
