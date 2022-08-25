@@ -76,7 +76,27 @@ logger.info("result : " + first.equals(object));
   - 양수 : compareTo() 를 호출하는 객체가 비교대상으로 들어오는 object 보다 사전적으로 순서가 앞설 때
   - 음수 : compareTo() 를 호출하는 객체가 비교대상으로 들어오는 object 보다 사전적으로 순서가 뒤일 떄
 
-- compareTo 매서드는 Date.class 에서도 사용할 수 있습니다. 날짜값을 비교하는 경우에도 사용이 가능합니다.
+- String.class
+```java
+public int compareTo(String anotherString) {
+        int len1 = value.length;
+        int len2 = anotherString.value.length;
+        int lim = Math.min(len1, len2);
+        char v1[] = value;
+        char v2[] = anotherString.value;
+
+        int k = 0;
+        while (k < lim) {
+            char c1 = v1[k];
+            char c2 = v2[k];
+            if (c1 != c2) {
+                return c1 - c2;
+            }
+            k++;
+        }
+        return len1 - len2;
+    }
+```
 
 ## Ref.
 [Java - 문자열(String)을 비교하는 방법 (==, equals, compare)](https://codechacha.com/ko/java-string-compare/)
