@@ -77,3 +77,6 @@ logger.info("result : " + first.equals(object));
   - 음수 : compareTo() 를 호출하는 객체가 비교대상으로 들어오는 object 보다 사전적으로 순서가 뒤일 떄
 
 - compareTo 매서드는 Date.class 에서도 사용할 수 있습니다. 날짜값을 비교하는 경우에도 사용이 가능합니다.
+
+## Ref.
+[Java - 문자열(String)을 비교하는 방법 (==, equals, compare)](https://codechacha.com/ko/java-string-compare/)
