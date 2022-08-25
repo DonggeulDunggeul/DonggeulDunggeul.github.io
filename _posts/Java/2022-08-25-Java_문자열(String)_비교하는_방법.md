@@ -22,7 +22,7 @@ last_modified_at: 2022-08-25
 
 - equals() 는 모든 객체의 부모 클래스인 Object 에 정의되어있는 매소드입니다. 
 
-```Java
+```java
 public boolean equals(Object anObject) {
         if (this == anObject) {
             return true;
@@ -52,14 +52,14 @@ public boolean equals(Object anObject) {
 
 ## 2. equals() 를 사용하면서 NullPointerException 피하기
 - equals() 를 사용하면서 주의할 점은 다음과 같이 비교할 변수가 null 이라면 NullPointerException이 발생합니다.
-``` Java
+``` java
 String first = null;
 String object = "test";
 logger.info("result : " + first.equals(object)); // NullPointException 
 ```
 
 - 반대로 인자로 전달되는 객체(String object)는 null 이라도 NullPointerException 이 발생하지 않습니다.
-```Java
+```java
 String first = "test";
 String object = null;
 logger.info("result : " + first.equals(object));
